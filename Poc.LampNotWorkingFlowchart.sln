@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.LampNotWorkingFlowchart.ConsoleApp", "Poc.LampNotWorkingFlowchart.ConsoleApp\Poc.LampNotWorkingFlowchart.ConsoleApp.csproj", "{0EBF13D3-9483-4C72-A72F-597749F8D988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.LampNotWorkingFlowchart.ConsoleApp.Tests", "Poc.LampNotWorkingFlowchart.ConsoleApp.Tests\Poc.LampNotWorkingFlowchart.ConsoleApp.Tests.csproj", "{BF54E6D2-6021-4469-8FD9-870C10D43D87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EBF13D3-9483-4C72-A72F-597749F8D988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EBF13D3-9483-4C72-A72F-597749F8D988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EBF13D3-9483-4C72-A72F-597749F8D988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EBF13D3-9483-4C72-A72F-597749F8D988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF54E6D2-6021-4469-8FD9-870C10D43D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF54E6D2-6021-4469-8FD9-870C10D43D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF54E6D2-6021-4469-8FD9-870C10D43D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF54E6D2-6021-4469-8FD9-870C10D43D87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
