@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Poc.LampNotWorkingFlowchart.ConsoleApp\Poc.LampNotWorkingFlowchart.ConsoleApp.csproj" />
+      <ProjectReference Include="..\..\src\Poc.LampNotWorkingFlowchart.ConsoleApp\Poc.LampNotWorkingFlowchart.ConsoleApp.csproj" />
     </ItemGroup>
 
 </Project>

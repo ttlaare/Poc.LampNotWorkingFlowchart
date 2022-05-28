@@ -1,8 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.LampNotWorkingFlowchart.ConsoleApp", "Poc.LampNotWorkingFlowchart.ConsoleApp\Poc.LampNotWorkingFlowchart.ConsoleApp.csproj", "{0EBF13D3-9483-4C72-A72F-597749F8D988}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.LampNotWorkingFlowchart.ConsoleApp", "src\Poc.LampNotWorkingFlowchart.ConsoleApp\Poc.LampNotWorkingFlowchart.ConsoleApp.csproj", "{00D329EA-8284-4F12-846F-C85149B862C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.LampNotWorkingFlowchart.ConsoleApp.Tests", "Poc.LampNotWorkingFlowchart.ConsoleApp.Tests\Poc.LampNotWorkingFlowchart.ConsoleApp.Tests.csproj", "{BF54E6D2-6021-4469-8FD9-870C10D43D87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.LampNotWorkingFlowchart.ConsoleApp.Tests", "tests\Poc.LampNotWorkingFlowchart.ConsoleApp.Tests\Poc.LampNotWorkingFlowchart.ConsoleApp.Tests.csproj", "{873E10F6-3EB4-4180-904E-829DFE69C4A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{52003EC0-67E1-4C88-81AA-207B5E09DCBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5F7D5EAA-48DC-4EB5-AD99-CE0C8382678F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,13 +14,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0EBF13D3-9483-4C72-A72F-597749F8D988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EBF13D3-9483-4C72-A72F-597749F8D988}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EBF13D3-9483-4C72-A72F-597749F8D988}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EBF13D3-9483-4C72-A72F-597749F8D988}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF54E6D2-6021-4469-8FD9-870C10D43D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF54E6D2-6021-4469-8FD9-870C10D43D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF54E6D2-6021-4469-8FD9-870C10D43D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF54E6D2-6021-4469-8FD9-870C10D43D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D329EA-8284-4F12-846F-C85149B862C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D329EA-8284-4F12-846F-C85149B862C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D329EA-8284-4F12-846F-C85149B862C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D329EA-8284-4F12-846F-C85149B862C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873E10F6-3EB4-4180-904E-829DFE69C4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873E10F6-3EB4-4180-904E-829DFE69C4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873E10F6-3EB4-4180-904E-829DFE69C4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873E10F6-3EB4-4180-904E-829DFE69C4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00D329EA-8284-4F12-846F-C85149B862C6} = {52003EC0-67E1-4C88-81AA-207B5E09DCBE}
+		{873E10F6-3EB4-4180-904E-829DFE69C4A7} = {5F7D5EAA-48DC-4EB5-AD99-CE0C8382678F}
 	EndGlobalSection
 EndGlobal
