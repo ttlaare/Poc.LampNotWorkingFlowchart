@@ -4,11 +4,11 @@ namespace Poc.LampNotWorkingFlowchart.ConsoleApp.Nodes;
 
 public class LampIsNotPluggedInNode : LampNode
 {
-    public LampIsNotPluggedInNode(LampContext lampContext) 
+    public LampIsNotPluggedInNode(LampContext lampContext)
         : base(lampContext)
     {
     }
-        
+
     public override async Task HandleOnSetAsync()
     {
         LampActionResult = LampContext.SocketIsNearby

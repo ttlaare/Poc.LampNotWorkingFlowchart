@@ -14,7 +14,7 @@ public class LampNodeFactory
     public LampNode CreateLampNode<TNode>(LampContext context) where TNode : LampNode
     {
         var nodeType = typeof(TNode);
-        
+
         if (nodeType == typeof(LampDoesNotWorkNode))
         {
             return new LampDoesNotWorkNode(context, this);
@@ -24,7 +24,7 @@ public class LampNodeFactory
         {
             return new LampIsPluggedInNode(context, lampService);
         }
-        
+
         if (nodeType == typeof(LampIsNotPluggedInNode))
         {
             return new LampIsNotPluggedInNode(context);

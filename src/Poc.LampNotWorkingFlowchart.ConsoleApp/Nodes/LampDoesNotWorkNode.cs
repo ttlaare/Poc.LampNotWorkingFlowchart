@@ -6,7 +6,7 @@ public class LampDoesNotWorkNode : LampNode
 {
     private readonly LampNodeFactory lampNodeFactory;
 
-    public LampDoesNotWorkNode(LampContext lampContext, LampNodeFactory lampNodeFactory) 
+    public LampDoesNotWorkNode(LampContext lampContext, LampNodeFactory lampNodeFactory)
         : base(lampContext)
     {
         this.lampNodeFactory = lampNodeFactory;

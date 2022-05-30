@@ -16,7 +16,7 @@ public class LampContextTests
     [OneTimeSetUp]
     public void OneTimeSetup()
     {
-        fixture.Customize(new AutoNSubstituteCustomization() { ConfigureMembers = true});
+        fixture.Customize(new AutoNSubstituteCustomization() { ConfigureMembers = true });
         lampNodeFactory = fixture.Create<LampNodeFactory>();
     }
 
@@ -35,12 +35,13 @@ public class LampContextTests
         var initialNode = lampNodeFactory.CreateLampNode<LampDoesNotWorkNode>(sut);
 
         (await sut.SetLampNodeAsync(initialNode))
-            .LampActionResult
+            .CurrentLampNode
+            !.LampActionResult
             .Value
             .Should()
             .Be(expected);
     }
-    
+
     [Test]
     public async Task Given_Socket_Not_Nearby_When_Set_Lamp_Node_Should_Return_Failed_Result()
     {
@@ -54,7 +55,8 @@ public class LampContextTests
         var initialNode = lampNodeFactory.CreateLampNode<LampDoesNotWorkNode>(sut);
 
         (await sut.SetLampNodeAsync(initialNode))
-            .LampActionResult
+            .CurrentLampNode
+            !.LampActionResult
             .IsFailed
             .Should()
             .BeTrue();

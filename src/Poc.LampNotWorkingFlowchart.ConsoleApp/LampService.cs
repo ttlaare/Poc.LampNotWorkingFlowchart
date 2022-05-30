@@ -3,7 +3,7 @@
 public interface ILampService
 {
     Task RepaireLamp();
-    
+
     Task RepaireBulb();
 }
 

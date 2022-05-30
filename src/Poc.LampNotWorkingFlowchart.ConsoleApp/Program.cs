@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using FluentResults;
 using Poc.LampNotWorkingFlowchart.ConsoleApp;
 using Poc.LampNotWorkingFlowchart.ConsoleApp.Factories;
 using Poc.LampNotWorkingFlowchart.ConsoleApp.Nodes;
@@ -14,8 +15,9 @@ var context = new LampContext()
     SocketIsNearby = true,
 };
 
-var lampActionResult = (await context.SetLampNodeAsync(factory.CreateLampNode<LampDoesNotWorkNode>(context)))
-    .LampActionResult;
+Result<LampAction> lampActionResult = (await context.SetLampNodeAsync(factory.CreateLampNode<LampDoesNotWorkNode>(context)))
+    .CurrentLampNode
+    !.LampActionResult;
 
 if (lampActionResult.IsFailed)
 {
